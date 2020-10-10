@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>SKILLS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+           
+        }
+
+        .sidenav {
+            background-color: #111;
+            display: none;
+            transition: 0.5s;
+            overflow-x: hidden;
+            padding-top: 60px;
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+        #main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px; }
+}
+
+        .logo {
+            padding-top: 20%;
+            height: 180px;
+            width: 200px;
+        }
+
+
+        body {
+            background-image: url(https://rb.gy/y1kjqt);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(189, 182, 182);
+            font-family:'Times New Roman';
+            
+
+
+        }
+
+        .container {
+            width: 30%;
+            background-color: lightgrey;
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 2%;
+            padding-bottom: 10px;
+            color: white;
+           
+        }
+
+        .html {
+            width: 70%;
+            background-color: #4CAF50;
+        }
+
+        .css {
+            width: 60%;
+            background-color: #298ddf;
+        }
+
+        .js {
+            width: 50%;
+            background-color: #f16f9a;
+        }
+
+        .sql {
+            width: 40%;
+            background-color: #f8c058;
+        }
+
+        p {
+            font-size: larger;
+        }
+
+        .hob {
+            font-size: larger;
+        }
+        .tab{
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+            width: 80%;
+            margin: 5%;
+            margin-left: 10%;
+        }
+        #inner{
+           margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <b> <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="certification.html">Certification</a>
+            <a href="contact.html">Contact</a>
+            <img class="logo " src="https://rb.gy/4vrzpu" alt="pic"></b>
+    </div>
+
+    <span style="font-size: 50px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+    <script>
+       function openNav() {
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("nav").style.display = "none";
+                document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    <div class="tab" id="main">
+        <div id="inner">
+    <h1><u>Skills,Hobbies and Languages Known</u></h1>
+
+    <h2>Skills</h2>
+    <p>HTML5</p>
+    <div class="container">
+        <div class="skills html">90%</div>
+    </div>
+
+    <p>CSS3</p>
+    <div class="container">
+        <div class="skills css">80%</div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="container">
+        <div class="skills js">65%</div>
+    </div>
+
+    <p>MySql</p>
+    <div class="container">
+        <div class="skills sql">60%</div>
+    </div>
+   
+    <hr>
+    <h2>Hobbies</h2>
+    <table>
+        <tr>
+            <td>
+                <ul class="hob">
+                    <li>Sketching 🎨</li>
+                    <li>Reading 📚</li>
+                    <li>Travelling 🚆</li>
+                    <li>Photography 📸</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Languages Known</h2>
+    <table>
+        <tr>
+            <td>
+                <ol class="hob">
+                    <li>Konkani(Mother tongue)</li>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Marathi</li>
+                </ol>
+            </td>
+        </tr>
+    </div>
+</div>
+    </table>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <title>Home|Portfolio</title>
+    <style>
+        body,
+        html {
+            font-family:'Times New Roman';
+            background-color: black;
+            background-image: linear-gradient(rgba(0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(https://t4.ftcdn.net/jpg/02/83/46/33/240_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .sidenav {
+            background-color: #111;
+            display: none;
+            transition: 0.5s;
+            overflow-x: hidden;
+            padding-top: 60px;
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 30px;
+            color: #818181;
+            display: block;
+            transition: 0.3s
+        }
+
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+        #main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px; }
+}
+
+        .logo {
+            padding-top: 50%;
+            height: 180px;
+            width: 200px;
+        }
+
+        .logo2 {
+            margin-left: 5%;
+            margin-top: -3%;
+            width: 150px;
+            height: 150px;
+            border: solid;
+            border-radius: 50%
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px !important;
+            margin-left: 50px;
+
+        }
+
+        .intro {
+            text-align: center;
+            letter-spacing: 2px;
+          
+            margin-top: -5%; 
+            
+            color: white;
+            text-shadow: 2px 2px grey;
+
+        }
+        
+
+        h1 {
+
+            font-size: 60px;
+        }
+
+        h3 {
+
+            font-size: 50px;
+        }
+
+        h2 {
+
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- to create a hamburger menu -->
+    <div class="container">
+        <div id="nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <b> <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="skills.html">Skills</a>
+                <a href="certification.html">Certification</a>
+                <a href="contact.html">Contact</a>
+                <img class="logo " src="https://rb.gy/4vrzpu" alt="pic"></b>
+        </div>
+
+        <span style="font-size: 50px; cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+
+        <script>
+            function openNav() {
+                document.getElementById("nav").style.display = "block";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            function closeNav() {
+                document.getElementById("nav").style.display = "none";
+                document.getElementById("main").style.marginLeft= "0";
+}
+            
+        </script>
+        <div id="main">
+        <div>
+            <img src="https://riddhinaik137.github.io/Images/ab.jpg" alt="pic" class="logo2">
+        </div>
+        
+        <div class="intro">
+            <h1>Hi,you found me! </h1>
+            <h2>This is Riddhi Naik.</h2>
+            <h3>&nbsp;&nbsp; Welcome to my Portfolio.&#128515;</h3>
+        </div>
+    </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
